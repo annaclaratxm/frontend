@@ -1,0 +1,23 @@
+.minha_classe {
+    color: green;
+    text-align: justify;
+}
+
+p {
+    color:black;
+    text-align: center;
+}
+.background_image {
+    background-image: url("../html/m.jpg");
+    padding: 20px;
+    color: black;
+    height: 200px;
+    width: 1000px;
+    background-position: center;
+    background-size: contain;
+}
+
+.classe_1 {
+    color: purple;
+    text-align: center;
+}
