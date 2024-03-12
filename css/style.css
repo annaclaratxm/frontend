@@ -1,23 +1,14 @@
-.minha_classe {
-    color: green;
-    text-align: justify;
+label, input {
+    display: block;
 }
-
-p {
-    color:black;
-    text-align: center;
+div {
+    margin-bottom: 20px;
 }
-.background_image {
-    background-image: url("../html/m.jpg");
-    padding: 20px;
-    color: black;
-    height: 200px;
-    width: 1000px;
-    background-position: center;
-    background-size: contain;
+.radio label,
+.radio input {
+    display: inline-block;
 }
-
-.classe_1 {
-    color: purple;
-    text-align: center;
+.check label,
+.check input {
+    display: inline-block;
 }

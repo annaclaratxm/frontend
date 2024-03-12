@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 01</title>
+    <title>Aula 03</title>
 </head>
 <body>
-    
-    <div>
-        <h1 class="classe_1">Introducão CSS</h1>
-        <h1 class="minha_classe">Classes em HTML</h1>     
-        <h2 class="minha_classe">Reutilizacão de classes</h2>
-        <p class="background_image">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-            aliquip ex ea commodo consequat.</p>
-    </div>
+    <form>
+        <div>
+            <label for="user">Nome:</label>
+            <input type="text" name="user" value="Anna Clara" disabled>
+        </div>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome:">
+        </div>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" placeholder="Digite sua cidade:">
+        </div>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" placeholder="Digite seu CPF:" required>
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="Digite seu E-mail:">
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Digite sua senha.">
+        </div>
 
+        <div>
+            <label for="preferido">Selecione seu time favorito:</label>
+            <div class="radio">
+                <input type="radio" value="tigre" name="preferido">
+                <label for="tigre">Tigre</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="sao_paulo" name="preferido">
+                <label for="sao_paulo">São Paulo</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="gremio" name="preferido">
+                <label for="gremio">Grêmio</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="disciplinas">Selecione as disciplinas</label>
+            <div class="check">
+                <input type="checkbox" value="frontend" name="disciplinas[]">
+                <label for="frontend">Front-end</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" value="backend" name="disciplinas[]">
+                <label for="backend">Back-end</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" value="banco_dados" name="disciplinas[]">
+                <label for="banco_dados">Bando de Dados</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="arquivo">Selecione um arquivo:</label>
+            <input type="file" name="arquivo">
+        </div>
+
+        <div>
+            <label for="arquivos">Selecione um ou mais arquivos:</label>
+            <input type="file" name="arquivos" multiple>
+        </div>
+
+
+        <div>
+            <input type="reset" value="Limpar"  style="display: inline-block;">
+            <input type="submit" value="Enviar" style="display: inline-block;">
+        </div>
+
+        <div>
+            <label for="comentario">Deixe seu comentário.</label>
+            <textarea name="comentario"></textarea>
+        </div>
+<p></p> 
+<p></p>
+
+        <div>
+            <fieldset>
+                <legend>Informe seu nome completo:</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome">
+            </fieldset>
+        </div>
+    </form>
+    
 </body>
 </html>
